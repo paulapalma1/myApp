@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
-import { UserModel } from 'app/models/UserModel';
+import { UserModel } from '../models/UserModel';
 
 @Component({
   selector: 'app-admin',

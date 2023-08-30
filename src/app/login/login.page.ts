@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Router, NavigationExtras, RouterLinkWithHref } from '@angular/router';
 import { IUserLogin } from '../models/IUserLogin';
-import { UserModel } from 'app/models/UserModel';
+import { UserModel } from '../models/UserModel';
 
 
 
