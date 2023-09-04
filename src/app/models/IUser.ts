@@ -4,7 +4,6 @@ export interface IUser {
     last_name: string;
     email: string;
     birthday: Date | undefined;
-    education_level: string;
     username: string;
     password: string;
 }

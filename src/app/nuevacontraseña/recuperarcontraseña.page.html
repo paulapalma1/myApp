@@ -15,19 +15,12 @@
     <div>
       <ion-label class="center-content">Registro de Asistencia</ion-label>
       <ion-input class="center-content" label="Usuario" [(ngModel)]="userLoginModal.username"></ion-input>
-      <ion-input class="center-content" label="Contraseña" [(ngModel)]="userLoginModal.password"></ion-input>
-    </div>
-    <div>
-      <!--
-        Navigación con una función.
-      -->
-      <ion-button shape="round" color="success" (click)="userLogin(userLoginModal)">Registrar</ion-button>
     </div>
     <div>
       <!--
         Navegación via HTML.
       -->
-      <ion-button shape="round" [routerLink]="['/usuario',userLoginModal.username]">Restablecer contraseña</ion-button>
+      <ion-button shape="round" [routerLink]="['/usuario',userLoginModal.username]">Recuperar contraseña</ion-button>
     </div>
   </div>
 </ion-content>
