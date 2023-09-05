@@ -6,18 +6,18 @@ import { Router } from '@angular/router';
 import { UserModel } from '../models/UserModel';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.page.html',
-  styleUrls: ['./admin.page.scss'],
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class AdminPage implements OnInit {
+export class HomePage implements OnInit {
 
-  adminInfoReceived: UserModel | undefined;
+  homeInfoReceived: UserModel | undefined;
 
   constructor(private r: Router) {
-    this.adminInfoReceived = this.r.getCurrentNavigation()?.extras.state?.['user'];
+    this.homeInfoReceived = this.r.getCurrentNavigation()?.extras.state?.['user'];
    }
 
   ngOnInit() {
