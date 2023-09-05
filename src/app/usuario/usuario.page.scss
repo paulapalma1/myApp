@@ -8,9 +8,13 @@ ion-input {
     padding: 50%;
 }
 
+ion-title {
+    text-align: justify;
+}
+
 .example-content {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-  }
+}

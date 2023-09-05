@@ -1,13 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Usuario</ion-title>
+    <ion-title><ion-icon name="person"></ion-icon> Usuario</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true" color="light">
 
-  <h1 class="center-content" style="padding-bottom: 50px">Bienvenido {{ userInfoReceived?.name }}</h1>
-  <ion-list [inset]="true">
+  <h1 class="center-content" style="padding-top: 10px"> RECUPERA TU CONTRASEÑA{{ userInfoReceived?.name }}</h1>  <ion-list [inset]="true">
     <ion-list-header>
       <ion-label>Datos de usuario</ion-label>
     </ion-list-header>
@@ -26,7 +29,10 @@
       -->
       
       <ion-label>Nueva contraseña: {{ userInfoReceived?.password }}</ion-label>
+      
     </ion-item>
-    </ion-list>
-
+  </ion-list>
+  
+  <ion-button expand="full" (click)="guardarYRedirigir()">Guardar</ion-button>
+    
 </ion-content>
