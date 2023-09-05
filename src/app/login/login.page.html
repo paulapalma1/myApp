@@ -14,8 +14,17 @@
   <div>
     <div>
       <ion-label class="center-content">Registro de Asistencia</ion-label>
-      <ion-input class="center-content" label="Usuario" [(ngModel)]="userLoginModal.username"></ion-input>
-      <ion-input class="center-content" label="Contraseña" [(ngModel)]="userLoginModal.password"></ion-input>
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon> <!--usuario -->
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input [(ngModel)]="userLoginModal.username"></ion-input>
+      </ion-item>
+      <ion-item>
+         <ion-icon name="lock" slot="start"></ion-icon> <!-- candado -->
+         <ion-label position="floating">Usuario</ion-label>
+         <ion-input [(ngModel)]="userLoginModal.password"></ion-input>
+      </ion-item> 
+            
     </div>
     <div>
       <!--
