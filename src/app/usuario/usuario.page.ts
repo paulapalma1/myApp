@@ -28,4 +28,8 @@ export class UsuarioPage implements OnInit {
   ngOnInit() {
   }
 
+  guardarYRedirigir() {
+    
+    this.router.navigate(['/login']);
+  }
 }
